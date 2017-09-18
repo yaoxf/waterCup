@@ -1,6 +1,0 @@
-代码说明：此代码是“信呼协同办公系统PHP源码”，下载地址是：http://down.admin5.com/php/133129.html#link
-帐号：admin(总管理员)
-
-帐号：diaochan、xiaoqiao、daqiao、zhangfei、zhaozl(基础用户)
-
-密码都是：123456
