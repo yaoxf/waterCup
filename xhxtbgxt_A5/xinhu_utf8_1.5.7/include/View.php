@@ -85,8 +85,6 @@ if($xhrock->display && ($ajaxbool == 'html' || $xhrock->tpltype=='html' || $ajax
 	$da = $xhrock->smartydata;
 	foreach($xhrock->assigndata as $_k=>$_v)$$_k=$_v;
 	include_once($mpathname);
-	var_dump($mpathname);
-	//exit();
 	
 	$_showbool = false;
 }
