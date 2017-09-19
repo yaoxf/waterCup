@@ -20,6 +20,8 @@ var todocontent = '',homeobject={},homenums=<?=json_encode($homearrs)?>;
 		echo '<td width="'.$bili.'%">';
 		if(isset($homeitems[0]))foreach($homeitems[0] as $nums){
 			$paths = ''.ROOT_PATH.'/'.P.'/home/desktop/items_'.$nums.'.php';
+			//var_dump($paths);   // yxf,引入桌面首页左侧内容：快捷入口、通知公告等 **************
+
 			if(file_exists($paths))include_once($paths);
 		}
 		
@@ -29,6 +31,8 @@ var todocontent = '',homeobject={},homenums=<?=json_encode($homearrs)?>;
 			echo '<td width="'.$bili.'%" style="padding-left:20px;">';
 			foreach($homeitems[$i] as $nums){
 				$paths = ''.ROOT_PATH.'/'.P.'/home/desktop/items_'.$nums.'.php';
+				//var_dump($paths);   // yxf,引入桌面首页右侧内容：我的申请、今日会议等 ************
+
 				if(file_exists($paths))include_once($paths);
 			}
 			echo '</td>';
@@ -40,6 +44,8 @@ var todocontent = '',homeobject={},homenums=<?=json_encode($homearrs)?>;
 
 <?php
 $paths = ''.ROOT_PATH.'/'.P.'/home/desktop/footer.php';
+//var_dump($paths);    // yxf,底部版权信息 *******************************
+
 if(file_exists($paths))include_once($paths);
 ?>
 	
